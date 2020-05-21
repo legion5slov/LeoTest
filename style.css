@@ -1,0 +1,27 @@
+body div {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  font-weight: bold;
+  font-family: Arial;
+}
+/*Oбщие свойства для всех блоков. конечно, вписать этот 
+набор поавил в inline-стиль (значение атрибута style) каждого из блоков*/
+.header,
+.middle,
+.footer {
+  border: 3px solid rgba(255, 255, 255, 0.534);
+  border-radius: 10px;
+  margin-top:0.5em; /*По-моему, так лучше?*/
+}
+input {  /*размер чекбоксов*/
+  width: 20px;
+  height: 20px;
+}
+form p{ /*Абзац растягивается на всю ширину формы*/
+  text-align:justify
+}
+form p span { /*общие стили для всех span'ов с вариантами ответа, чтобы не прилипали к чекбоксам.*/
+  margin-left: 2em;
+}
